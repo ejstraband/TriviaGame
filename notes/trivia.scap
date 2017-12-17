@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScappleDocument Version="1.1" ID="C1CFBF7E-89F4-4A0C-A0B3-5038A7762303">
+    <Notes>
+        <Note ID="0" FontSize="12.0" Position="557.84375,116.050781" Width="166.0" Level="1">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Basic Welcome Page
+- Title
+- Backgound
+- Muppet Show Theme
+- Start Button</String>
+            <ConnectedNoteIDs>2</ConnectedNoteIDs>
+            <PointsToNoteIDs>2</PointsToNoteIDs>
+        </Note>
+        <Note ID="2" FontSize="12.0" Position="558.0,229.0" Width="81.0" Level="1">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Click Start</String>
+            <ConnectedNoteIDs>0, 3</ConnectedNoteIDs>
+            <PointsToNoteIDs>3</PointsToNoteIDs>
+        </Note>
+        <Note ID="3" FontSize="12.0" Position="558.0,286.0" Width="208.0" Level="2">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Trivia Page
+- Title Stays
+- Timer Starts
+- Timer Displayed
+- Questions
+- Answer Options Below
+- Done Button</String>
+            <ConnectedNoteIDs>2, 4</ConnectedNoteIDs>
+            <PointsToNoteIDs>4</PointsToNoteIDs>
+        </Note>
+        <Note ID="4" FontSize="12.0" Position="558.0,427.0" Width="103.0" Level="2">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Click Done</String>
+            <ConnectedNoteIDs>3, 5</ConnectedNoteIDs>
+            <PointsToNoteIDs>5</PointsToNoteIDs>
+        </Note>
+        <Note ID="5" FontSize="12.0" Position="558.0,484.0" Width="200.0" Level="2">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Finish Page
+- Title
+- All Done!
+- Correct Answers
+- Incorrect Answers
+- Unanswered Questions</String>
+            <ConnectedNoteIDs>4</ConnectedNoteIDs>
+        </Note>
+    </Notes>
+    <BackgroundShapes></BackgroundShapes>
+    <AutoFit>0, 2-4</AutoFit>
+    <NoteStyles>
+        <Style Name="Bubble (Blue)" ID="15ED4333-B5C5-4322-AB76-3BF8A87BA078" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.561855 0.71062 0.779401</BorderColor>
+            <FillColor>0.702319 0.888276 0.974252</FillColor>
+        </Style>
+        <Style Name="Bubble (Green)" ID="5D47B6DF-447B-4B39-97A5-66DBF9584D7A" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.572684 0.758969 0.558154</BorderColor>
+            <FillColor>0.715855 0.948712 0.697692</FillColor>
+        </Style>
+        <Style Name="Bubble (Pink)" ID="CFE0D7E4-39F3-44D1-953D-2787A223A250" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.794796 0.560965 0.58607</BorderColor>
+            <FillColor>0.957566 0.766747 0.999616</FillColor>
+        </Style>
+        <Style Name="Bubble (Red)" ID="ED45A75C-8E95-465A-B603-D0EA235338DF" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.794796 0.560965 0.58607</BorderColor>
+            <FillColor>0.993495 0.701207 0.732587</FillColor>
+        </Style>
+        <Style Name="Bubble (Yellow)" ID="B6CF0D3B-038E-4047-A2FD-24317F26578C" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.798177 0.714184 0.522055</BorderColor>
+            <FillColor>0.997722 0.89273 0.652569</FillColor>
+        </Style>
+        <Style Name="Red Text" ID="FE70F81F-D6C1-4621-98C7-A175B31086F6" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="No" AffectFade="No">
+            <TextColor>0.985948 0.0 0.026951</TextColor>
+        </Style>
+        <Style Name="Title Text" ID="A878BFCA-4CEF-46E4-882B-7F8F3A714CB5" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="No" AffectNoteBody="No" AffectFade="No">
+            <FontSize>28.0</FontSize>
+            <IsBold>Yes</IsBold>
+        </Style>
+    </NoteStyles>
+    <UISettings>
+        <BackgroundColor>0.999767 0.98837 0.949907</BackgroundColor>
+        <DefaultFont>Helvetica</DefaultFont>
+        <DefaultTextColor>0.0 0.0 0.0</DefaultTextColor>
+    </UISettings>
+    <PrintSettings PaperSize="612.0,792.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="na-letter" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
+</ScappleDocument>
