@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ScappleDocument Version="1.1" ID="C1CFBF7E-89F4-4A0C-A0B3-5038A7762303">
     <Notes>
-        <Note ID="0" FontSize="12.0" Position="557.84375,116.050781" Width="166.0" Level="1">
+        <Note ID="0" FontSize="12.0" Position="40.577086,142.122402" Width="166.0" Level="1">
             <Appearance>
                 <Alignment>Left</Alignment>
+                <Border Weight="3" Style="Square"></Border>
             </Appearance>
             <String>Basic Welcome Page
 - Title
@@ -13,17 +14,18 @@
             <ConnectedNoteIDs>2</ConnectedNoteIDs>
             <PointsToNoteIDs>2</PointsToNoteIDs>
         </Note>
-        <Note ID="2" FontSize="12.0" Position="558.0,229.0" Width="81.0" Level="1">
+        <Note ID="2" FontSize="12.0" Position="56.256773,278.67709" Width="134.0" Level="1">
             <Appearance>
                 <Alignment>Left</Alignment>
             </Appearance>
-            <String>Click Start</String>
-            <ConnectedNoteIDs>0, 3</ConnectedNoteIDs>
+            <String>Function: Click Start</String>
+            <ConnectedNoteIDs>0, 3, 8</ConnectedNoteIDs>
             <PointsToNoteIDs>3</PointsToNoteIDs>
         </Note>
-        <Note ID="3" FontSize="12.0" Position="558.0,286.0" Width="208.0" Level="2">
+        <Note ID="3" FontSize="12.0" Position="18.038023,344.966152" Width="208.0" Level="2">
             <Appearance>
                 <Alignment>Left</Alignment>
+                <Border Weight="3" Style="Square"></Border>
             </Appearance>
             <String>Trivia Page
 - Title Stays
@@ -35,29 +37,105 @@
             <ConnectedNoteIDs>2, 4</ConnectedNoteIDs>
             <PointsToNoteIDs>4</PointsToNoteIDs>
         </Note>
-        <Note ID="4" FontSize="12.0" Position="558.0,427.0" Width="103.0" Level="2">
+        <Note ID="4" FontSize="12.0" Position="49.643492,511.434902" Width="155.0" Level="2">
             <Appearance>
                 <Alignment>Left</Alignment>
             </Appearance>
-            <String>Click Done</String>
-            <ConnectedNoteIDs>3, 5</ConnectedNoteIDs>
+            <String>Function: Click Done</String>
+            <ConnectedNoteIDs>3, 5, 10</ConnectedNoteIDs>
             <PointsToNoteIDs>5</PointsToNoteIDs>
         </Note>
-        <Note ID="5" FontSize="12.0" Position="558.0,484.0" Width="200.0" Level="2">
+        <Note ID="5" FontSize="12.0" Position="21.94818,596.130215" Width="213.0" Level="2">
             <Appearance>
                 <Alignment>Left</Alignment>
+                <Border Weight="3" Style="Square"></Border>
             </Appearance>
             <String>Finish Page
 - Title
 - All Done!
 - Correct Answers
 - Incorrect Answers
-- Unanswered Questions</String>
+- Unanswered Questions
+- Kermit Gif/Image</String>
             <ConnectedNoteIDs>4</ConnectedNoteIDs>
+        </Note>
+        <Note ID="7" FontSize="12.0" Position="780.405507,168.214907" Width="147.0" Level="1">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="3" Style="Jagged"></Border>
+            </Appearance>
+            <String>Starting Variables
+- Total Questions
+- Timer
+- Correct Answers
+- Incorrect Answers
+
+HTML elements
+- timerDiv
+- questionsDiv
+- actionButtonDiv
+- scoresDiv
+</String>
+        </Note>
+        <Note ID="8" FontSize="12.0" Position="270.167879,273.733073" Width="134.0" Level="1">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Function: Click Start</String>
+            <ConnectedNoteIDs>2, 9</ConnectedNoteIDs>
+            <PointsToNoteIDs>9</PointsToNoteIDs>
+        </Note>
+        <Note ID="9" FontSize="12.0" Position="451.69295,243.297013" Width="244.0" Level="1">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Start Timer
+Re-draw page
+- Write to the Timer Div
+- Display Questions
+- Change Start Button to Done Button</String>
+            <ConnectedNoteIDs>8</ConnectedNoteIDs>
+        </Note>
+        <Note ID="10" FontSize="12.0" Position="281.422468,507.768784" Width="155.0" Level="2">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Function: Click Done</String>
+            <ConnectedNoteIDs>4, 12</ConnectedNoteIDs>
+            <PointsToNoteIDs>12</PointsToNoteIDs>
+        </Note>
+        <Note ID="12" FontSize="12.0" Position="503.054097,471.621868" Width="225.0" Level="2">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Stop Timer
+Capture Answer Values
+Computer Correct Answers
+Update Scores
+Set Kermit Happy or Sad
+</String>
+            <ConnectedNoteIDs>10</ConnectedNoteIDs>
+        </Note>
+        <Note ID="13" FontSize="13.0" Position="975.0,170.0" Width="187.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="3" Style="Jagged"></Border>
+            </Appearance>
+            <String>Needed Functions
+- Start Game
+- Start Timer
+- Stop Timer
+- Out of Time
+- Write Out Questions to HTML
+- Write Out Final Screen
+- Finish Game
+- Check Answers
+- Write out Scores
+- Set Win/Loss</String>
         </Note>
     </Notes>
     <BackgroundShapes></BackgroundShapes>
-    <AutoFit>0, 2-4</AutoFit>
+    <AutoFit>0, 2-5, 7-10, 12-13</AutoFit>
     <NoteStyles>
         <Style Name="Bubble (Blue)" ID="15ED4333-B5C5-4322-AB76-3BF8A87BA078" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
             <BorderThickness>1</BorderThickness>

@@ -1,43 +1,15 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!-- template 
+<p>This is a question.</p>
 
-<head>
+<form action="">
+  <input type="radio" name="answer1" value="alpha"> Male<br>
+  <input type="radio" name="answer2" value="bravo"> Female<br>
+  <input type="radio" name="answer3" value="charlie"> Other<br>
+  <input type="radio" name="answer4" value="delta"> Male<br>
+</form> 
+-->
 
-	<meta charset="UTF-8">
-	<title>Muppet Show Trivia!</title>
-
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-
-	<!-- <script>w3.includeHTML();</script> -->
-
-</head>
-
-<body>
-
-	<header>
-		<h1>Welcome to the Muppet Show Trivia Game!</h1>
-	</header>
-
-	<div id="welcomeBox">
-
-		<p>Welcome Box</p>
-
-		<img src="assets/images/MuppetShow.jpg">
-		
-		<p>Please Click Start to Begin</p>
-	</div>
-
-	<br>
-
-	<div id="timer">
-		<h2>Seconds Remaining: 30</h2>
-	</div>
-
-	<div id="questions">
-
-		<!-- <w3-include-html="notes/questions.html"> -->
+<!-- my questions div -->
 
 		<h2>Questions</h2>
 
@@ -111,32 +83,18 @@
 		  <input type="radio" name="q8" value="wrong">Mice<br>
 		</form>
 
-	</div>
-	
-	<br>
+<!-- 
 
-	<div id="startDoneButton">
-		<button>Start</button>
-	</div>
-
-	<br>
-
-	<div id="scorecard">
-		<img id="happyKermit" src="assets/images/happyKermitLoop.gif">
-		<br>
-		<img id="sadKermit" src="assets/images/sad-kermit.jpg">
-		<br>
-		<h2>Scorecard</h2>
-		<ul>
-			<li id="correctAnswers">Correct Answers: </li>
-			<li id="incorrectAnswers">Incorrect Answers: </li>
-			<li id="unansweredQuestions">Unanswered Questions: </li>						
-		</ul>
-	</div>	
-
-
-<script type="text/javascript" src="assets/javascript/app.js"></script>
-
-</body>
-
-</html>
+Array Method?
+	var questions = [
+		{
+			"question":"Who created the Muppets?",
+			"choices":[	"Jim Henson", "Brian Henson", "Frank Oz", "Dave Grohl"],
+			"correct":"Jim Henson"
+		},
+		{
+			"question":"",
+			"choices":[	"", "", "", ""],
+			"correct":""
+		},
+	]; -->
