@@ -2,7 +2,6 @@
 
 
 // data variables
-var timeToComplete = 10;
 var totalQuestions = 8;
 var correctAnswers = 0;
 var incorrectAnswers = 0;
@@ -56,7 +55,7 @@ function scoreTheAnswers() {
 	}
 
 function endGame() {
-	// alert("Game Over");
+	clearInterval();
 	$("#questions").hide();
 	$("#timer").hide();
 	$("#scorecard").show();
