@@ -8,7 +8,8 @@ var correctAnswers = 0;
 var incorrectAnswers = 0;
 
 // html element variables
-var countdownTimer = 30 ;
+var timeLimit = 30;
+var timerDisplay;
 var questionsDiv = "questions";
 var startDone = "Start";
 
@@ -21,6 +22,18 @@ function pageSetup() {
 	$("#scorecard").hide();
 }
 
+function runTimer() {
+  timerDisplay = setInterval(decrement, 1000);
+}
+
+function decrement() {
+	timeLimit = (timeLimit - 1);
+	$("#timer").html("<h2> Seconds Remaining: " + timeLimit + "</h2>");
+	if (timeLimit === 0) {
+	endGame();
+	}
+}
+
 function startGame() {
 	// alert("Game Start!");
 	startDone = "Finished";
@@ -28,7 +41,7 @@ function startGame() {
 	$("#questions").show();
 	$("#timer").show();
 	$("#startDoneButton").html("<button>" + startDone + "</button>");
-	timerStart();
+	runTimer();
 }
 
 function scoreTheAnswers() {
@@ -52,19 +65,9 @@ function endGame() {
 	winLose();
 }
 
-function countdownReadout() {
-	countdownTimer--;
-	$("#timer").html("<h2> Seconds Remaining: " + countdownTimer + "</h2>")
-}
+// function writeOutQuestions() {
 
-function timerStart() {
-	setTimeout(endGame, 1000 * countdownTimer);
-	countdownReadout();
-}
-
-function writeOutQuestions() {
-
-}
+// }
 
 function winLose() {
 	if (correctAnswers > 5) {

@@ -1,0 +1,47 @@
+<!-- Interval Demo -->
+<!-- Go to the last script tag -->
+
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+  </head>
+
+  <body>
+
+    <div id="show-number"></div>
+
+    <br>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script type="text/javascript">
+
+    var timeLimit = 30;
+    var timerDisplay;
+
+    function runTimer() {
+      timerDisplay = setInterval(decrement, 1000);
+    }
+      //  The decrement function.
+      function decrement() {
+        timeLimit = (timeLimit - 1);
+        $("#show-number").html("<h2>" + timeLimit + "</h2>");
+        if (timeLimit === 0) {
+          end
+        }
+    }
+    runTimer();
+
+    </script>
+
+  </body>
+
+</html>
