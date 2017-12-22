@@ -7,7 +7,7 @@ var correctAnswers = 0;
 var incorrectAnswers = 0;
 
 // html element variables
-var timeLimit = 30;
+var timeLimit = 45;
 var timerDisplay;
 var questionsDiv = "questions";
 var startDone = "Start";
